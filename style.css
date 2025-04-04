@@ -1,40 +1,65 @@
 body {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #dcdfe3;
-    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-.container {
-    background: #f7f0eb;
-    padding: 20px;
-    border-radius: 15px;
+.card {
+    background-color: #fffafc;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     text-align: center;
-    width: 400px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
-input {
-    padding: 8px;
-    width: 80%;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.title {
+    color: #e573a0;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
-button {
-    padding: 10px 15px;
+.text-warning {
+    color: #d63384 !important;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.form-control {
+    border-radius: 25px;
+    border: 2px solid #e573a0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn {
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    background-color: #e573a0;
+    color: white;
 }
 
-.btn-resposta {
-    background-color: #e6a2bf;
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
 }
 
-.btn-charada {
-    background-color: #f7d56b;
+.btn:active {
+    background-color: #f48fb1 !important;
+    transform: scale(0.95);
+}
+
+#resposta-container p {
+    font-weight: bold;
+    color: #d63384;
+    font-size: 1.1rem;
 }
